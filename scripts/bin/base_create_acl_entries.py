@@ -24,7 +24,7 @@ import binascii
 import sys
 
 dbg_on = False
-target_cfg_path = '/etc/opx/acl'
+target_cfg_path = '%s/etc/opx/acl' % os.environ.get("OPX_INSTALL_PATH","")
 
 
 def get_master_cfg():
